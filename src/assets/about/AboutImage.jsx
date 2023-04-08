@@ -5,7 +5,7 @@ const AboutImage = () => {
     <svg
       style={{ width: "80%", marginInline: "auto" }}
       className="animated"
-      id="freepik_stories-man-reading"
+      id="about"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"
       version="1.1"
@@ -15,7 +15,7 @@ const AboutImage = () => {
       <style
         dangerouslySetInnerHTML={{
           __html:
-            "svg#freepik_stories-man-reading:not(.animated) .animable {opacity: 0;}svg#freepik_stories-man-reading.animated #freepik--speech-bubble--inject-49 {animation: 1.5s Infinite  linear floating;animation-delay: 0s;}            @keyframes floating {                0% {                    opacity: 1;                    transform: translateY(0px);                }                50% {                    transform: translateY(-10px);                }                100% {                    opacity: 1;                    transform: translateY(0px);                }            }        ",
+            "svg#about:not(.animated) .animable {opacity: 0;}svg#about.animated #freepik--speech-bubble--inject-49 {animation: 1.5s Infinite  linear floating;animation-delay: 0s;}            @keyframes floating {                0% {                    opacity: 1;                    transform: translateY(0px);                }                50% {                    transform: translateY(-10px);                }                100% {                    opacity: 1;                    transform: translateY(0px);                }            }        ",
         }}
       />
       <g

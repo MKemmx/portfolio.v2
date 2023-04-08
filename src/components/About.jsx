@@ -3,11 +3,14 @@ import React from "react";
 import AboutMe from "../assets/about/AboutImage";
 import { AiOutlineDownload } from "react-icons/ai";
 
+// Resume link
+import { resumeLink } from "../utils/links";
+
 const About = () => {
   return (
-    <div id="about" className="w-full text-white overflow-x-hidden	">
-      <div className="container flex items-center flex-col justify-center mx-auto h-auto py-10 min-h-[90vh]">
-        <h1 className="pt-8 md:pt-0 text-3xl font-bold text-[#FBAE3C] mb-10 mr-auto">
+    <section id="about" className="w-full text-white overflow-x-hidden">
+      <div className=" container flex items-center flex-col justify-center mx-auto h-auto py-10 min-h-[90vh]">
+        <h1 className="pt-5 md:pt-0 text-3xl font-bold text-[#FBAE3C] mb-10 mr-auto">
           About
         </h1>
         <div className="w-full h-full flex flex-col md:flex-row justify-between items-center">
@@ -36,7 +39,13 @@ const About = () => {
                   color="#FFF"
                   className="text-lg md:text-2xl mr-1.5"
                 />
-                <p className="text-sm md:text-base">Resume</p>
+                <a
+                  href={resumeLink}
+                  target="_blank"
+                  className="text-sm md:text-base"
+                >
+                  Resume
+                </a>
               </div>
             </div>
             {/* Tech Skills */}
@@ -116,7 +125,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

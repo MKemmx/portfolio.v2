@@ -10,7 +10,7 @@ import {
 
 const Home = () => {
   return (
-    <div className="w-full overflow-x-hidden">
+    <section className="w-full overflow-x-hidden">
       <div className="container flex flex-col justify-start py-12 md:py-0 space-y-4 md:space-y-0 md:flex-row md:items-center md:justify-between mx-auto h-auto min-h-[92vh]">
         <div
           data-aos="fade-down"
@@ -24,9 +24,9 @@ const Home = () => {
               <span className="text-[#FBAE3C] ml-2 font-bold">Kemm </span>
             </div>
             <div className="mb-3">
-              <h3 className="text-4xl md:text-5xl font-bold text-[#FBAE3C] mb-1">
+              <h1 className="text-4xl md:text-5xl font-bold text-[#FBAE3C] mb-1">
                 Web Developer
-              </h3>
+              </h1>
               <p className="text-sm md:text-base pt-1">
                 who loves turning ideas into reality. Let's collaborate to
                 create something amazing.
@@ -79,7 +79,7 @@ const Home = () => {
           <HomeImage />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

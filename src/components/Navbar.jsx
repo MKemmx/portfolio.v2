@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import {
   AiOutlineMenu,
@@ -12,6 +12,9 @@ import {
 // Logo
 import logo from "../assets/logo/my-logo.png";
 
+// Resume link
+import { resumeLink } from "../utils/links";
+
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const handleToogleMenu = () => {
@@ -24,6 +27,32 @@ const Navbar = () => {
   const handleChangePage = (selectedMenu) => {
     setCurrentMenu(selectedMenu);
   };
+
+  let scrollingTimer = null;
+  const handleScroll = () => {
+    clearTimeout(scrollingTimer);
+    const sections = document.querySelectorAll("section");
+    scrollingTimer = setTimeout(function () {
+      sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop - 210;
+        const sectionHeight = section.offsetHeight;
+        const sectionBottom = sectionTop + sectionHeight;
+        const currentPos = window.scrollY;
+        if (currentPos >= sectionTop && currentPos <= sectionBottom) {
+          setCurrentMenu((prev) => {
+            return menus[index];
+          });
+        }
+      });
+    }, 500);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -61,7 +90,13 @@ const Navbar = () => {
                 color="#FFF"
                 className="text-base md:text-lg mr-1.5"
               />
-              <p className="text-sm md:text-base">Resume</p>
+              <a
+                href={resumeLink}
+                target="_blank"
+                className="text-sm md:text-base"
+              >
+                Resume
+              </a>
             </div>
           </ul>
         </div>
@@ -106,7 +141,13 @@ const Navbar = () => {
               color="#FFF"
               className="text-lg md:text-2xl mr-1.5"
             />
-            <p className="text-sm md:text-base">Resume</p>
+            <a
+              href={resumeLink}
+              target="_blank"
+              className="text-sm md:text-base"
+            >
+              Resume
+            </a>
           </div>
 
           <div className="flex justify-center space-x-5">
