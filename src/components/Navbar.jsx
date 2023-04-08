@@ -85,19 +85,17 @@ const Navbar = () => {
               </a>
             ))}
 
-            <div className="bg-[#1F7A8C] flex items-center px-3 py-1.5 rounded-md w-fit mx-auto md:mx-0 text-white cursor-pointer transition-opacity ease-in-out duration-300 hover:bg-opacity-70">
+            <a
+              href={resumeLink}
+              target="_blank"
+              className="bg-[#1F7A8C] flex items-center px-3 py-1.5 rounded-md w-fit mx-auto md:mx-0 text-white cursor-pointer transition-opacity ease-in-out duration-300 hover:bg-opacity-70"
+            >
               <AiOutlineDownload
                 color="#FFF"
                 className="text-base md:text-lg mr-1.5"
               />
-              <a
-                href={resumeLink}
-                target="_blank"
-                className="text-sm md:text-base"
-              >
-                Resume
-              </a>
-            </div>
+              <p className="text-sm md:text-base">Resume</p>
+            </a>
           </ul>
         </div>
       </div>
