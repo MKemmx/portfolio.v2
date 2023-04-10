@@ -197,7 +197,7 @@ const Navbar = () => {
           onClick={() => {
             handleChangePage(menus[0]);
           }}
-          className="w-10 h-10 bg-[#1F7A8C] shadow-2xl rounded-full fixed right-4 bottom-16 z-30 flex items-center justify-center"
+          className="w-10 h-10 bg-[#1F7A8C] shadow-2xl rounded-full fixed right-4 md:right-12 bottom-16 z-30 flex items-center justify-center transition-opacity ease-in-out duration-300 hover:bg-opacity-70"
         >
           <AiOutlineArrowUp color="#FBAE3C" size={28} />
         </a>
