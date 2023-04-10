@@ -7,7 +7,9 @@ import {
   AiFillFacebook,
   AiFillLinkedin,
   AiOutlineDownload,
+  AiOutlineArrowUp,
 } from "react-icons/ai";
+import { FaArrowUp } from "react-icons/fa";
 
 // Logo
 import logo from "../assets/logo/my-logo.png";
@@ -21,6 +23,7 @@ const Navbar = () => {
     setIsOpenMenu(!isOpenMenu);
   };
 
+  const [showBackToTop, setShowBackToTop] = useState(false);
   const menus = ["Home", "About", "Projects", "Contact"];
   const [currentMenu, setCurrentMenu] = useState(menus[0]);
 
@@ -30,6 +33,14 @@ const Navbar = () => {
 
   let scrollingTimer = null;
   const handleScroll = () => {
+    // Back to top
+    const screenPosition = window.scrollY;
+    if (screenPosition >= 700) {
+      setShowBackToTop(true);
+    } else {
+      setShowBackToTop(false);
+    }
+
     clearTimeout(scrollingTimer);
     const sections = document.querySelectorAll("section");
     scrollingTimer = setTimeout(function () {
@@ -88,12 +99,9 @@ const Navbar = () => {
             <a
               href={resumeLink}
               target="_blank"
-              className="bg-[#1F7A8C] flex items-center px-3 py-1.5 rounded-md w-fit mx-auto md:mx-0 text-white cursor-pointer transition-opacity ease-in-out duration-300 hover:bg-opacity-70"
+              className="bg-[#1F7A8C] shadow-lg flex items-center px-3 py-1.5 rounded-md w-fit mx-auto md:mx-0 text-white cursor-pointer transition-opacity ease-in-out duration-300 hover:bg-opacity-70"
             >
-              <AiOutlineDownload
-                color="#FFF"
-                className="text-base md:text-lg mr-1.5"
-              />
+              <FaArrowUp color="#FFF" className="text-base md:text-lg mr-1.5" />
               <p className="text-sm md:text-base">Resume</p>
             </a>
           </ul>
@@ -181,6 +189,19 @@ const Navbar = () => {
           </div>
         </ul>
       </div>
+
+      {/* Arrow top */}
+      {showBackToTop && (
+        <a
+          href={`#home`}
+          onClick={() => {
+            handleChangePage(menus[0]);
+          }}
+          className="w-10 h-10 bg-[#1F7A8C] shadow-2xl rounded-full fixed right-4 bottom-16 z-30 flex items-center justify-center"
+        >
+          <AiOutlineArrowUp color="#FBAE3C" size={28} />
+        </a>
+      )}
     </>
   );
 };
