@@ -1,6 +1,9 @@
 import React from "react";
 
+// React Icons
 import { AiOutlineGithub, AiOutlineLink } from "react-icons/ai";
+
+// Slider
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 

@@ -118,7 +118,7 @@ const Projects = () => {
       <div className="w-full text-white ">
         <div className="container flex items-center flex-col justify-center mx-auto h-auto py-10 my-14 min-h-[90vh]">
           <h1 className="pt-5 md:pt-12 text-3xl font-bold text-[#FBAE3C] mr-auto mb-10">
-            Projects
+            Personal Projects
           </h1>
           <div className="space-y-12 md:space-y-24">
             {myProjects.map((item, index) => {

@@ -67,7 +67,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="overflow-x-hidden	 w-full sticky top-0 z-10 px-8 md:px-10 shadow-md bg-[#002233]">
+      <div className="overflow-x-hidden	 w-full sticky top-0 z-50 px-8 md:px-10 shadow-md bg-[#002233]">
         <div className="container flex justify-between items-center mx-auto h-[8vh]">
           <div className="logo">
             <img className="rounded-full h-12 w-12" src={logo} alt="my-logo" />

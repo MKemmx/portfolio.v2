@@ -10,6 +10,7 @@ import Loader from "./components/Loader/Loader";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
+import Timeline from "./components/Timeline";
 import Contact from "./components/Contact";
 import Projects from "./components/Project/Projects";
 import Footer from "./components/Footer";
@@ -35,6 +36,7 @@ function App() {
           <div className="px-8 md:px-10">
             <Home />
             <About />
+            <Timeline />
             <Projects />
             <Contact />
             <Footer />

@@ -11,7 +11,8 @@ const Footer = () => {
     <div className="w-full overflow-x-hidden	">
       <div className="container  mx-auto flex flex-col items-start md:flex-row md:items-center justify-between py-8 md:py-12 text-white">
         <p data-aos="fade-left" data-aos-duration="1500">
-          &copy; All rights reserved. Mark Kemm Asdilla - 2023
+          &copy; All rights reserved. Mark Kemm Asdilla -{" "}
+          {new Date().getFullYear()}
         </p>
         <div className="flex mt-5 md:mt-0 space-x-5">
           <a
