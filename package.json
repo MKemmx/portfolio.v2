@@ -9,6 +9,9 @@
     "preview": "vite preview",
     "host": "vite --host"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "aos": "^2.3.4",
