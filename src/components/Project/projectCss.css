@@ -1,7 +1,6 @@
 .projectDetailCard {
-  background: rgba(16, 61, 70, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(16, 61, 70 0.37);
-  backdrop-filter: blur(20px);
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border: 1px solid #0c2e3f;
+  box-shadow: 0 8px 32px 0 rgba(16, 61, 70 0.37);
 }

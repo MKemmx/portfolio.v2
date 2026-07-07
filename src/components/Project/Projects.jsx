@@ -114,8 +114,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      {/* <div  className="h-0 md:h-[1vh]"></div> */}
-      <div className="w-full text-white ">
+      <div className="w-full text-white  bg-[#0c2e3f] px-8 md:px-10">
         <div className="container flex items-center flex-col justify-center mx-auto h-auto py-10 my-14 min-h-[90vh]">
           <h1 className="pt-5 md:pt-12 text-3xl font-bold text-[#FBAE3C] mr-auto mb-10">
             Personal Projects

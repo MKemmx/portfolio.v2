@@ -8,7 +8,7 @@ const Contact = () => {
       id="contact"
       data-aos="fade-up"
       data-aos-duration="1500"
-      className="w-full h-[80vh] flex items-center justify-center flex-col text-white overflow-x-hidden	"
+      className="w-full h-[80vh] flex items-center justify-center flex-col text-white overflow-x-hidden px-8 md:px-10"
     >
       <h1 className="text-4xl sm:text-6xl font-bold mb-5"> Get In Touch </h1>
       <p className="max-w-lg  text-base md:text-lg leading-7 mx-auto mb-5 text-gray-300 text-center">

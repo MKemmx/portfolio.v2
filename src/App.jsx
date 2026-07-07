@@ -33,7 +33,7 @@ function App() {
       ) : (
         <React.Fragment>
           <Navbar />
-          <div className="px-8 md:px-10">
+          <div>
             <Home />
             <About />
             <Timeline />

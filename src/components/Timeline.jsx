@@ -11,7 +11,7 @@ const Timeline = () => {
 
   return (
     <section id="timeline">
-      <div className="w-full text-white ">
+      <div className="w-full text-white px-8 md:px-10">
         <div className="container flex items-center flex-col justify-center mx-auto h-auto">
           <h1 className="pt-5 md:pt-12 text-3xl font-bold text-[#FBAE3C] mr-auto mb-10">
             Work Experience
@@ -29,7 +29,7 @@ const Timeline = () => {
                 </div>
 
                 <div
-                  className="order-1 bg-[#103D46] drop-shadow-sm rounded-lg shadow-xl w-full md:w-5/12 px-8 py-6"
+                  className="order-1 bg-[#0c2e3f] drop-shadow-sm rounded-lg shadow-xl w-full md:w-5/12 px-8 py-6"
                   data-aos="fade-left"
                   data-aos-duration="1500"
                 >
@@ -86,7 +86,7 @@ const Timeline = () => {
                   </h1>
                 </div>
                 <div
-                  className="order-1 bg-[#103D46] drop-shadow-sm rounded-lg shadow-xl w-full md:w-5/12 px-8 py-6"
+                  className="order-1 bg-[#0c2e3f] drop-shadow-sm rounded-lg shadow-xl w-full md:w-5/12 px-8 py-6"
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >

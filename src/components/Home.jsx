@@ -10,7 +10,7 @@ import {
 
 const Home = () => {
   return (
-    <section className="w-full overflow-x-hidden">
+    <section className="w-full overflow-x-hidden px-8 md:px-10">
       <div className="container flex flex-col justify-start py-12 md:py-0 space-y-4 md:space-y-0 md:flex-row md:items-center md:justify-between mx-auto h-auto min-h-[92vh]">
         <div
           data-aos="fade-down"

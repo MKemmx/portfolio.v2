@@ -8,8 +8,11 @@ import { resumeLink } from "../utils/links";
 
 const About = () => {
   return (
-    <section id="about" className="w-full text-white overflow-x-hidden">
-      <div className=" container flex items-center flex-col justify-center mx-auto h-auto py-10 min-h-[90vh]">
+    <section
+      id="about"
+      className="w-full bg-[#0c2e3f] text-white overflow-x-hidden px-8 md:px-10"
+    >
+      <div className="container flex items-center flex-col justify-center mx-auto h-auto py-10 min-h-[90vh]">
         <h1 className="pt-5 md:pt-0 text-3xl font-bold text-[#FBAE3C] mb-10 mr-auto">
           About
         </h1>

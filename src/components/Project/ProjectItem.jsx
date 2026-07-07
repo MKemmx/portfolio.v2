@@ -18,21 +18,26 @@ const ProjectItem = ({ item, isOdd }) => {
       data-aos-duration="1500"
       className={`flex flex-col ${aarangeMent} gap-y-5 md:gap-y-10 lg:gap-y-0 lg:gap-x-10 text-white`}
     >
-      <div className="w-full flex items-center">
-        <Splide className="w-full" aria-label="Project Images">
+      <div className="w-full flex">
+        <Splide
+          className="w-full bg-[#002233] rounded-md"
+          aria-label="Project Images"
+        >
           {item.images?.map((image) => (
             <SplideSlide>
-              <div className="bg-[#103D46] flex justify-center items-center rounded-md py-5 px-3">
+              <div className="flex justify-center items-center py-5 px-3">
                 <img
-                  className="h-[230px] md:max-h-[400px] md:h-auto object-contain"
+                  className="h-[230px] md:max-h-[400px] md:h-auto"
                   src={image}
+                  alt={item.title}
                 />
               </div>
             </SplideSlide>
           ))}
         </Splide>
       </div>
-      <div className="w-full projectDetailCard flex flex-col justify-center px-4 py-4 md:p-10 rounded-md space-y-7">
+
+      <div className="w-full bg-[#002233] projectDetailCard flex flex-col justify-center px-4 py-4 md:p-10 rounded-md space-y-7">
         <h2 className="text-2xl text-center md:text-start md:text-4xl">
           {item.title}
         </h2>

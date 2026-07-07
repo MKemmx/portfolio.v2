@@ -13,5 +13,8 @@ body {
 
 .splide__pagination__page {
   background-color: rgb(208, 208, 208) !important;
-  /* background-color: #fff; */
+}
+
+.splide__arrow {
+  background: #f4f4f4 !important;
 }
